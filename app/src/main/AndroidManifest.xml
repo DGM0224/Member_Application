@@ -13,6 +13,9 @@
         android:theme="@style/Theme.MemberApplication"
         tools:targetApi="31">
         <activity
+            android:name=".UserlistActivity"
+            android:exported="false" />
+        <activity
             android:name=".MainActivity"
             android:exported="true">
             <intent-filter>
