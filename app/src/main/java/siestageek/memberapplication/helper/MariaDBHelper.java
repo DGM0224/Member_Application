@@ -13,9 +13,9 @@ import java.util.List;
 public class MariaDBHelper {
 
     private static final String DB_URL = "";
-    private static final String DB_USER = "clouds2024";
-    private static final String DB_PWD = "clouds2024";
-    private static final String DB_NAME = "clouds2024";
+    private static final String DB_USER = "";
+    private static final String DB_PWD = "";
+    private static final String DB_NAME = "";
 
     // MariaDB Driver 초기화
     static {
