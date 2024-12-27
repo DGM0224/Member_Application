@@ -26,6 +26,13 @@ android {
         sourceCompatibility JavaVersion.VERSION_11
         targetCompatibility JavaVersion.VERSION_11
     }
+    
+    // MariaDB 앱 빌드시 오류 유발 방지
+    packagingOptions {
+        exclude 'META-INF/ASL2.0'
+        exclude 'META-INF/AL2.0'
+        exclude 'META-INF/LGPL2.1'
+    }
 }
 
 dependencies {
@@ -40,3 +47,4 @@ dependencies {
 
     implementation 'org.mariadb.jdbc:mariadb-java-client:3.1.2'
 }
+

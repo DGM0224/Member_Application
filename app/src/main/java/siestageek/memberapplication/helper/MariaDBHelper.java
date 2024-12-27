@@ -17,6 +17,15 @@ public class MariaDBHelper {
     private static final String DB_PWD = "clouds2024";
     private static final String DB_NAME = "clouds2024";
 
+//    create table member (
+//    mno int primary key auto_increment,
+//    userid varchar(18) unique,
+//    passwd varchar(18) not null,
+//    name varchar(18) not null,
+//    email text not null,
+//    regdate datetime default current_timestamp());
+
+
     // MariaDB Driver 초기화
     static {
         try {
