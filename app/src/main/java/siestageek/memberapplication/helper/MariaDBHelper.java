@@ -10,12 +10,18 @@ import java.sql.ResultSet;
 import java.sql.SQLException;
 import java.util.List;
 
+import static siestageek.memberapplication.BuildConfig.DB_URL;
+import static siestageek.memberapplication.BuildConfig.DB_USER;
+import static siestageek.memberapplication.BuildConfig.DB_PWD;
+
 public class MariaDBHelper {
 
-    private static final String DB_URL = "jdbc:mariadb://3.35.207.57:3306/clouds2024";
-    private static final String DB_USER = "clouds2024";
-    private static final String DB_PWD = "clouds2024";
-    private static final String DB_NAME = "clouds2024";
+    // 보안상의 이유로 DB 연결정보는 gradle의 build.config에 작성
+    // 먼저, gradle.properties에 DB 연결정보 작성
+    // 그 후 build.gradle에서 이것을 사용한다고 설정
+/*    private static final String DB_URL = "jdbc:mariadb://:3306/";
+    private static final String DB_USER = "";
+    private static final String DB_PWD = "";*/
 
 //    create table member (
 //    mno int primary key auto_increment,
